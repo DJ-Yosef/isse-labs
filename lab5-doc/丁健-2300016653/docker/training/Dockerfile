@@ -10,6 +10,6 @@ RUN pip install -r requirements.txt
 COPY docker/training/train.py ./train.py
 # Store model in a shared volume
 VOLUME ["/app/models"]
-# TODO: Set the command to run the training script
-CMD [...]
+# Set the command to run the training script
+CMD ["python", "train.py"]
 
